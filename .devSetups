@@ -1,0 +1,7 @@
+source ~/.gitAliases
+source ~/.gitFunctions
+source ~/.apolloAliases
+
+# go convenience
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
