@@ -1,4 +1,0 @@
-alias nrt='npm run test'
-alias nrtc='npm run test -- --coverage'
-alias nru='npm run test -- -u'
-alias nrs='npm run start'
