@@ -1,4 +1,6 @@
 alias nrt='npm run test'
 alias nrtc='npm run test -- --coverage'
-alias nru='npm run test -- -u'
+alias nrtu='npm run test -- -u'
 alias nrs='npm run start'
+alias nrl='npm run lint'
+alias nrlf='npm run lint -- --fix'

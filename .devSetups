@@ -1,7 +1,10 @@
-source .gitAliases
-source .gitFunctions
-source .apolloAliases
+source ~/.aliases/.gitAliases
+source ~/.aliases/.gitFunctions
+source ~/.aliases/.apolloAliases
+source ~/.aliases/.androidAliases
+source ~/.aliases/.npmAliases
 
 # go convenience
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
+alias ngrok='/Users/it190118/ngrok'
