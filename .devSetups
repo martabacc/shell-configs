@@ -1,5 +1,3 @@
-source ~/.aliases/.gitAliases
-source ~/.aliases/.gitFunctions
 source ~/.aliases/.apolloAliases
 source ~/.aliases/.androidAliases
 source ~/.aliases/.npmAliases
