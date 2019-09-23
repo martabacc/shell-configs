@@ -1,6 +1,7 @@
 source ~/.aliases/.apolloAliases
 source ~/.aliases/.androidAliases
 source ~/.aliases/.npmAliases
+source ~/.aliases/.browserHelp
 
 # go convenience
 export PATH=$PATH:$(go env GOPATH)/bin
