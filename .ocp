@@ -1,0 +1,7 @@
+cenv () {
+  oc env dc/$1 --list --resolve=true
+}
+
+clog () {
+  oc log dc/$1
+}
