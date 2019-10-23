@@ -4,4 +4,7 @@ alias nrtu='nrt -- -u'
 alias nrs='npm run start'
 alias nrl='npm run lint'
 alias nrlf='nrl -- --fix'
-alias nrlq='nrl -- --quiet'
+alias nrlq='nrl -- --quiet || npm run lint: quiet'
+alias nrlt='nrl && nrt'
+alias npi='npm i'
+
