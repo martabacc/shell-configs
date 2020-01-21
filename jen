@@ -1,12 +1,18 @@
-j2Login() {
-    NODE_TLS_REJECT_UNAUTHORIZED=0 j2 login -u $1 -p $2 --step-up
+j2l() {
+    NODE_TLS_REJECT_UNAUTHORIZED=0 jenius login --url='https://apigw-jfb-jenius2-sit.ecommchannels.com/graphql' -s -p P@ssw0rd123 -u $1 -p $2
 }
  
- 
- 
+j2ld() {
+    NODE_TLS_REJECT_UNAUTHORIZED=0 jenius login --url='https://apigw-jfb-jenius2-sit.ecommchannels.com/graphql' -s -p P@ssw0rd123 -u $1 -p P@ssw0rd123
+}
+
 j2Profile() {
     env=$1
     cif=$2
     echo "Getting information for cif $cif on $env"
     curl -k -s --request GET --url "https://ms-idm-jenius2-$env.apps.dev.corp.btpn.co.id/admin/profile" --header "x-jenius-cif: $cif" | jq '{ name: .user.cn, cif: .user.id, account: .user.accountNumber, cashtag: .user.cashtag, email: .user.email, phone: .user.telephoneNumber }'
+}
+
+ocenv() {
+    oc set env $1 --list
 }
